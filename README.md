@@ -1,1 +1,1 @@
-# Real-Time-IoT-Sensor-Data-Pipeline-for-Smart-Greenhous-Monitoring
+# Real-Time AgriTech Data Pipeline for Smart Greenhouses
