@@ -1,6 +1,6 @@
 # Real-Time AgriTech Data Pipeline for Smart Greenhouses
 
----
+
 
 ## Description
 
@@ -11,13 +11,13 @@ For historical insights and strategic decision-making:
 - Raw data is archived in **HDFS** to support batch processing.
 - **Apache Spark** runs nightly aggregation jobs to analyze daily sensor trends and generate **automated email reports** for stakeholders.
 
----
+
 
 ## System Architecture
 
-![System Architecture](/images/Project architecture.png)
+![System Architecture](/images/Project_Architecture.png)
 
----
+
 
 ## Logical Components
 
@@ -38,7 +38,7 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
 }
 ```
 
----
+
 
 ## Ingestion Layer
 
@@ -46,7 +46,7 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
 - Acts as the backbone of real-time data ingestion and messaging.
 - Each sensor type writes to a dedicated Kafka topic (e.g., `temperature`, `air_quality`, `humidity`).
 
----
+
 
 ## Processing Layer
 
@@ -63,7 +63,7 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
     - Time intervals (daily, weekly)
   - Generates reports and summary tables.
 
----
+
 
 ## Storage Layer
 
@@ -76,7 +76,7 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
   - **Snowflake:** Stores cleaned, modeled data for analytics and dashboards.
   - **PostgreSQL:** Stores current real-time data for monitoring applications.
 
----
+
 
 ## Analytics, Visualization, & Reporting
 
@@ -88,13 +88,13 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
 - **Reporting:**
   - Daily automated email reports to stakeholders with summarized sensor trends and anomalies.
 
----
+
 
 ## Schema
 
-![Schema](attachment:e0e07095-2bc1-4d79-b4d4-7fa07960288b:Schema.png)
+![Schema](/images/Schema.png)
 
----
+
 
 ## Future Work
 
@@ -107,7 +107,7 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
   - ETL pipelines (ODS → Snowflake)
   - Report generation and distribution
 
----
+
 
 ## High-Level Data Flow
 
@@ -126,4 +126,4 @@ Devices that generate real-time data (temperature, humidity, air quality, soil m
 6. **Reporting:**
    - Automated emails deliver daily summaries to stakeholders.
 
----
+
