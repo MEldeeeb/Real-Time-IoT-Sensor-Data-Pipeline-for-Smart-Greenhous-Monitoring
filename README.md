@@ -15,7 +15,7 @@ For historical insights and strategic decision-making:
 
 ## System Architecture
 
-![System Architecture](images/.png)
+![System Architecture](/images/Project architecture.png)
 
 ---
 
